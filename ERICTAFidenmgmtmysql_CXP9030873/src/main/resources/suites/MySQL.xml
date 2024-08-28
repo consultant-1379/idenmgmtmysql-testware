@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="MySQL - District11">
+    <test name="MySQL" preserve-order="true">
+        <classes>
+            <class
+                name="com.ericsson.nms.security.taf.test.cases.ChangeDefaultPasswordsOnDbNodes" />
+            <class
+                name="com.ericsson.nms.security.taf.test.cases.MySQL_Functional_Test">
+                <methods>
+                    <include name="initializeTestingVariables" />
+                    <include name="verifyMySQlStatus" />
+                    <include name="verifyMySQLDB" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

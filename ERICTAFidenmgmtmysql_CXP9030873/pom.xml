@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.ericsson.nms.security.taf</groupId>
+        <artifactId>idenmgmtmysql-testware</artifactId>
+        <version>1.14.1-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+  <groupId>com.ericsson.nms.security.taf.testware</groupId>
+  <artifactId>ERICTAFidenmgmtmysql_CXP9030873</artifactId>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.ericsson.cifwk</groupId>
+      <artifactId>all-taf-sdk</artifactId>
+      <type>pom</type>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <!-- <version>4.11</version> -->
+    </dependency>
+    <dependency>
+      <groupId>com.ericsson.oss.testware.taf</groupId>
+      <artifactId>host-configurator</artifactId>
+      <version>${version.enm-taf-test-library}</version>
+    </dependency>
+          <!-- UserManagement operator-->
+        <dependency>
+            <groupId>com.ericsson.oss.testware.security</groupId>
+            <artifactId>identity-management-ui-operators</artifactId>
+        </dependency>    
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.groovy</groupId>
+          <artifactId>groovy-eclipse-compiler</artifactId>
+          <extensions>true</extensions>
+      </plugin>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <compilerId>groovy-eclipse-compiler</compilerId>
+          <verbose>true</verbose>
+        </configuration>
+        <dependencies>
+          <dependency>
+            <groupId>org.codehaus.groovy</groupId>
+            <artifactId>groovy-eclipse-compiler</artifactId>
+            <version>${groovy-eclipse-compiler.version}</version>
+          </dependency>
+          <dependency>
+            <groupId>org.codehaus.groovy</groupId>
+            <artifactId>groovy-eclipse-batch</artifactId>
+            <version>${groovy-eclipse-batch.version}</version>
+          </dependency>
+          <dependency>
+            <groupId>org.codehaus.plexus</groupId>
+            <artifactId>plexus-compiler-api</artifactId>
+            <version>${plexus-compiler-api.version}</version>
+          </dependency>
+        </dependencies>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>
+
+

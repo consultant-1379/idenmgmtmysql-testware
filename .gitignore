@@ -1,0 +1,33 @@
+# Compiled source #
+*.class
+*/bin/*
+
+# Eclipse files
+.project
+.classpath
+.settings
+.metadata
+
+# Packages
+*.jar
+
+# Maven build files
+target
+reports
+
+#TAF output
+tmp
+test-output
+
+# ARQ tests
+arq-perf
+
+# PMD
+.pmd
+
+# Merge files
+*.orig
+
+# backup files
+*.*~
+
